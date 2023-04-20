@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Igor Niemiec</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="icon" href="IconOfficial.ico" sizes="256x144">
+    <link rel="stylesheet" href="style.css">
+</head> 
+ 
+<body>
+    
+
+  <div id="Container">
+     <header>
+
+     </header>
+
+     <section class="showcase">
+        <header>
+            <div> </div>
+            <div class="toggle"></div>
+        </header>
+     
+       <div class="home">
+        
+        <video src="BG.mp4" autoplay  loop muted></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2> GCC TITLE </h2>
+            <h3> </h3>
+            <p>  </p>
+            <a href="https://assetstore.unity.com/packages/3d/environments/furniture-hd-203206"> Asset Store </a>
+
+            
+        
+
+        </div>
+       
+        <div class="scial">
+            <a href="https://www.linkedin.com/in/igor-niemiec-levelartist/"> <img src="in.png" alt="linkedin" >  </a>
+        </div>
+
+        
+       </div>
+
+        <div class="gallery">
+
+        </div>
+
+
+    </section>
+
+   
+    
+
+
+   
+        <div class="menu">
+            <ul>
+                
+                  <li> <a >Home</a>    </li>  
+                  <li> <a href="gallery.html" >Gallery</a> </li>
+                  <li> <a >Flutter App Project</a> </li>
+                  <li> <a >Contact me</a> </li>
+                
+               
+            </ul>
+        </div>
+
+   
+
+        </div>
+
+     <footer>
+   
+       
+     </footer>
+
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    const galleryToggle = document.querySelector('.galleryToggle')
+    const gallery = document.querySelector('.gallery')
+    const home = document.querySelector('.home')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+
+    })
+
+    galleryToggle.addEventListener('click', ()=>
+    {
+        gallery.classList.toggle('active')
+        home.classList.toggle('active')
+        
+    })
+
+    </script>
+
+</body>
+
+</html>

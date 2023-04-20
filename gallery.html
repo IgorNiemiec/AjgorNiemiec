@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="icon" href="IconOfficial.png" sizes="256x144">
+    <link rel="stylesheet" href="gallerystyle.css">
+</head> 
+
+
+<body>
+
+
+  <!--  
+  <div id="Container">
+    <header>
+
+    </header>
+
+    <section class="showcase">
+       <header>
+           <div> <h1>Halo Alo Dzieciaczki</h1> </div>
+           <div class="toggle"></div>
+       </header>
+    
+      
+
+   </section>
+-->
+
+
+<section class="showcase">
+    <header>
+        <div> </div>
+        <div class="toggle"></div>
+    </header>
+ 
+    
+    <div class="gallery-wrap">
+        <div class="gallery-center" id="GalleryCenter">
+           <div class="gallery-box">
+               <a href="#"> <img src="Gallery/g_1.png"  alt=" "> </a>
+               <a href="#"> <img src="Gallery/g_2.png"  alt=" "> </a>
+               <a href="#"> <img src="Gallery/g_3.png"  alt=" "> </a>
+           </div>
+     
+       
+           <div class="gallery-box">
+               <a href="#"> <img src="Gallery/g_4.png"  alt=" "> </a>
+               <a href="#"> <img src="Gallery/g_5.png"  alt=" "> </a>
+               <a href="#"> <img src="Gallery/g_6.png" alt=" "> </a>
+           </div>
+    
+           <div class="gallery-box">
+            
+            <a href="#"> <img src="Gallery/g_7.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_8.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_9.png" alt=" "> </a>
+    
+           </div>
+    
+           <div class="gallery-box">
+            
+            <a href="#"> <img src="Gallery/g_10.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_11.png"  alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_12.png" alt=" "> </a>
+    
+           </div>
+    
+           <div class="gallery-box">
+            
+            <a href="#"> <img src="Gallery/g_13.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_14.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_15.png" alt=" "> </a>
+           </div>
+    
+           <div class="gallery-box">
+            
+            <a href="#"> <img src="Gallery/g_16.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_17.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_18.png" alt=" "> </a>
+           </div>
+    
+           <div class="gallery-box">
+            <a href="#"> <img src="Gallery/g_19.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_20.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_21.png" alt=" "> </a>
+           </div>
+    
+           <div class="gallery-box">
+            <a href="#"> <img src="Gallery/g_22.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_23.png" alt=" "> </a>
+            <a href="#"> <img src="Gallery/g_24.png" alt=" "> </a>
+           </div>
+    
+          
+    
+        
+        </div>
+       
+     </div>
+      
+
+
+    
+  
+
+
+</section>
+
+
+
+
+
+
+    <div class="menu">
+        <ul>
+            
+              <li> <a href="home.html">Home</a>    </li>  
+              <li> <a href="gallery.html" >Gallery</a> </li>
+              <li> <a >Flutter App Project</a> </li>
+              <li> <a >Contact me</a> </li>
+            
+           
+        </ul>
+    </div>
+
+
+
+ 
+   
+  
+
+       
+
+    <footer>
+  
+      
+    </footer>
+
+ 
+
+<!--
+ <script>
+    
+
+
+    </script>
+
+
+-->
+
+<script>
+    var galleryCenter = document.getElementById('GalleryCenter');
+    var count = 0;
+
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+
+    })
+
+    window.addEventListener('wheel', function(evemt)
+    {
+        if (event.deltaY < 0)
+        {
+            count -=2;
+            galleryCenter.style.transform = 'translate(-50%,-50%) perspective(1000px) rotateY('+count+'deg)'
+        }
+        else if (event.deltaY > 0)
+        {
+            count +=2;
+        }
+
+    })
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>
